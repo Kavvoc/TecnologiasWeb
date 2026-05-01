@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Futebol Brasileiro - Ranking de Títulos</h1>
+        <p>Os maiores campeões nacionais</p>
+        <h2>Menu de navegação</h2>
+        <nav>
+
+<a href="#tabela">Ranking de títulos</a>
+<a href="#cadastro">Cadastrar jogador</a>
+     </nav>
+    </header>
+    <main>
+    <section id="tabela"> 
+        <h1>Classificação de títulos nacionais</h1>
+        <p>Ranking dos clubes brasileiros com mais títulos do campeonato brasileiro</p>
+       
+        <table>
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Escudo</th>
+                    <th>Time</th>
+                    <th>Títulos Brasileiros</th>
+                    <th>Copa do Brasil</th>
+                    <th>Total</th>
+                </tr>
+
+           
+                </thead>
+                
+                <tbody>
+                <tr>
+                    <td>1º</td>
+                    <td><img src="../imagens/maiorCampeao.png" alt="Palmeiras"></td>
+                    <td>Palmeiras</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>16</td>
+                </tr>
+                
+                <tr>
+                    <td>2º</td>
+                    <td><img src="../imagens/time2.png" alt="Flamengo"></td>
+                    <td>Flamengo</td>
+                    <td>8*</td>
+                    <td>5</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>3º</td>
+                    <td><img src="../imagens/time3.png" alt="Corinthians"></td>
+                    <td>Corinthians</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>11</td>
+                </tr>
+                
+                <tr>
+                    <td>4º</td>
+                    <td><img src="../imagens/time4.png" alt="Cruzeiro"></td>
+                    <td>Cruzeiro</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>10</td>
+                </tr>
+                
+                <tr>
+                    <td>5º</td>
+                    <td><img src="../imagens/time5.png" alt="Santos"></td>
+                    <td>Santos</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>6º</td>
+                    <td><img src="../imagens/time6.png" alt="São Paulo"></td>
+                    <td>São Paulo</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>7º</td>
+                    <td><img src="../imagens/time7.png" alt="Grêmio"></td>
+                    <td>Grêmio</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>7</td>
+                </tr>
+                
+                <tr>
+                    <td>8º</td>
+                    <td><img src="../imagens/time8.png" alt="Vasco da Gama"></td>
+                    <td>Vasco da Gama</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>9º</td>
+                    <td><img src="../imagens/time9.png" alt="Fluminense"></td>
+                    <td>Fluminense</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>10º</td>
+                    <td><img src="../imagens/time10.png" alt="Atlético Mineiro"></td>
+                    <td>Atlético Mineiro</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="6">*87 é do Sport</td>
+                </tr>
+                </tfoot>
+        </table>
+            </section>
+           
+            <section id="cadastro">
+                <h1>Cadastro de Jogador</h1>
+                <p>Preencha todos os dados abaixo para cadastrar um jogador</p>
+
+                 <form action="" method="post">
+                   <fieldset>
+                    <legend>Cadastro</legend>
+                 
+                    <label for="inome">Nome Completo:</label> <br>
+                   <input type="text" name="nome" id="inome" required><br>
+                   <br>
+                                                        
+                    <label for="iemail">Email:</label><br>
+                   <input type="email" name="email" id="iemail"><br>
+                   <br>
+                                      
+                    <label for="isenha">Senha:</label><br>
+                    <input type="password" name="senha" id="isenha"><br>
+                    <br>
+
+                     <label for="idata">Data de Nascimento:</label><br>
+                    <input type="date" name="data" id="idata"><br>
+                    <br>
+
+                     <label for="iidade">Idade:</label><br>
+                     <input type="number" name="idade" id="iidade" required step="1"><br>
+                     <br>
+                     
+                     <label for="ipeso">Peso(kg):</label><br>
+                     <input type="range" name="peso" id="ipeso" min="0" max="300" value="75"> <span>75kg</span><br>
+                     <br>
+
+                     <label for="itel">Telefone:</label><br>
+                     <input type="tel" name="tel" id="itel" placeholder="XX-XXXXX-XXXX"><br>
+                     <br>
+
+                     <label for="isite">Site Pessoal:</label><br>
+                     <input type="url" name="site" id="isite" placeholder="https://exemplo.com"><br>
+                     <br>
+
+                     <label for="icor">Cor:</label><br>
+                     <input type="color" name="cor" id="icor" value="red"><br>
+                     <br>
+                   </fieldset>
+            </section>
+           
+           
+        <section>
+            <fieldset>
+                <legend>Dados profissionais:</legend>
+                <label for="iclube">Selecione o Clube:</label><br>
+                <select name="clube" id="iclube">
+                <option value="" disabled selected>-- Escolha um clube --</option>
+                <option value="Palmeiras">Palmeiras</option>
+                <option value="Flamengo">Flamengo</option>
+                <option value="Corinthians">Corinthians</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Santos">Santos</option>
+                <option value="Grêmio">Grêmio</option>
+                <option value="Atlético Mineiro">Atlético</option>
+                <option value="Cruzeiro">Cruzeiro</option>
+                <option value="Vasco">Vasco</option>
+                <option value="Fluminense">Fluminense</option>
+                </select><br>
+                
+                <br>
+                <label for="iposi">Posição Principal:</label><br>
+                <select name="posi" id="iposi" size="4">
+                    <option value="Zagueiro">Zagueiro</option>
+                    <option value="Atacante">Atacante</option>
+                    <option value="Meio Campo">Meio Campo</option>
+                    <option value="Lateral">Lateral</option>
+                </select><br>
+                 
+                <br>
+                <label for="icamisa">Número da camisa:</label><br>
+                <input type="number" name="camisa" id="icamisa"><br>
+                <br>
+
+                <label for="isala">Salário(R$):</label><br>
+                <input type="number" name="sala" id="isala" placeholder="Ex: 50000.00"><br>
+                <br>
+                
+                
+                <label for="idata2">Data de vencimento do contrato:</label><br>
+                <input type="date" name="data" id="idata2"><br>
+                <br>
+                
+                
+                <label for="ihora">Horário de Treino Preferido:</label><br>
+                <input type="time" name="hora" id="ihora" value="09:00"><br>
+                <br>
+                
+                <label for="ipart">Data e Hora da Última Partida:</label><br>
+                <input type="datetime-local" name="part" id="ipart"><br>
+                <br>
+                
+                <label for="imon">Mês/Ano de Contratação:</label><br>
+                <input type="month" name="mon" id="imon"><br>
+                <br>
+                
+                <label for="iweek">Semana de Folga:</label><br>
+                <input type="week" name="week" id="iweek"><br>
+                <br>
+            </fieldset>
+          
+            </section>
+
+            <section>
+
+    <fieldset>
+        <legend>Características</legend>
+        <span><strong>Pé Dominante</strong></span><br>
+        
+        <input type="radio" name="pe" id="des" value="destro">
+        <label for="des">Destro</label>
+        
+        <br>
+        <input type="radio" name="pe" id="can" value="canhoto">
+        <label for="can">Canhoto</label>
+        
+        <br>
+        <input type="radio" name="pe" id="amb" value="ambidestro">
+        <label for="amb">Ambidestro</label>
+        
+        <br>
+        <br>
+
+       <span><strong>Habilidades especiais:</strong></span><br>
+        <input type="checkbox" name="fal" id="ifal">
+        <label for="ifal">Cobrador de Faltas</label>
+        <br>
+
+        <input type="checkbox" name="fal2" id="ipen">
+        <label for="ipen">Cobrador de Pênaltis</label>
+        <br>
+
+        <input type="checkbox" name="fal3" id="ipot">
+        <label for="ipot">Potencial capitão</label>
+        <br>
+
+        <input type="checkbox" name="fal4" id="icon">
+        <label for="icon">Convocável pra seleção</label>
+        <br>
+<br>
+        <label for="ijoga"><span>Biografia do Jogador:</span></label><br>
+        <textarea name="joga" id="ijoga" placeholder="Escreva uma breve biografia do jogador:"  cols="30" rows="6" ></textarea><br>
+        <br>
+        
+<span><label for="iup">Upload de foto do jogador:</label></span><br>
+<input type="file" value="Enviar" name="up" id="iup"><br>
+<br>
+
+<span><label for="ipesq">Pesquisar estatísticas:</label></span><br>
+<input type="search" name="pesq" id="ipesq" placeholder="Digite para buscar..."><br>
+        <br>
+
+    </fieldset>
+    <br><br>
+    <input type="submit" value="Cadastrar Jogador">
+    <input type="reset" value="Limpar Formulário">
+    <input type="button" value="Ajuda">
+</form>
+</section>
+
+    </main>
+
+    <footer>
+        <p><strong>Ciência da Computação - IFBA</strong></p>
+        <p>&copy; 2026.1 - Criado por Ítalo Salgado</p>
+    </footer>
+</body>
+</html>
